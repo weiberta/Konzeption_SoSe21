@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Guillotine</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="29-05-styles.css"/>
+</head>
+
+<body id="guillotine">
+<div class="page-wrapper">
+
+    <div id="header"><h1>  G U I L L O T I N E. </h1>
+    </div>
+
+
+    <div id="navigation">
+        <h3> Denke dir einen witzigen Satz aus und lass ihn von anderen malen! </h3>
+    </div>
+
+
+    <div id="sidebar">Spieler Interface
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,</p>
+    </div>
+
+
+<div class="right-float">
+    <div id="main">
+        <div id="info">
+        </div>
+
+                <div id="canvas-input">
+                    <canvas id="canvas">  </canvas>
+                        <div class="tools">
+
+                            <div onClick="change_color(this)" class="color-field" style="background:#000000;"></div> <!-- change_color(element) function-->
+                            <div onClick="change_color(this)" class="color-field" style="background:#ffffff;"></div>
+                            <div onClick="change_color(this)" class="color-field" style="background:#d6b49d;"></div>
+                            <div onClick="change_color(this)" class="color-field" style="background:#ac0000;"></div>
+                            <div onClick="change_color(this)" class="color-field" style="background:#9d03a2;"></div>
+                            <div onClick="change_color(this)" class="color-field" style="background:#002bcd;"></div>
+                            <div onClick="change_color(this)" class="color-field" style="background:#03bf3e;"></div>
+                            <div onClick="change_color(this)" class="color-field" style="background:#eccf02;"></div>
+
+                            <button onclick="undo_last()" type="button" class="button">Undo</button>
+                            <button onclick="clear_canvas()" type="button" class="button">Clear</button>
+
+
+
+                        </div>
+             </div>
+     </div><input onInput="draw_color = this.value" type="color" class="color-picker">
+    <input  type="range" min="1" max="60" value="10" step="5" class="pen-range" onInput="draw_width = this.value">
+    </div>
+         <div id="footer"> Hochschule Furtwangen, MKB und OMB 4
+    </div>
+</div>
+
+
+
+</body>
+<script src="29-05-script.js"></script>
+</html>

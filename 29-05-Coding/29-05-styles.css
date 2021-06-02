@@ -1,0 +1,173 @@
+
+/* —————————〈  C A N V A S  〉——————————— */
+
+
+canvas{
+ border: 2px solid black;
+ cursor: pointer;
+ position:relative;
+ width: 100%;
+}
+
+.tools {
+ display: flex;
+ justify-content: center;
+ flex-direction: row; /* display */
+ margin-top: 1rem;
+}
+
+/*---————〈 C O L O R  F I E L D 〉————----*/
+
+.tools .color-field {
+ height: 40px;
+ width: 40px;
+ min-height: 40px;
+ min-width: 40px;
+
+ cursor: crosshair;
+ display: inline-block;
+ box-sizing: border-box;
+ border-radius: 25%;
+ border: 2px solid black;
+ align-self: center;
+ margin: 0 1rem;
+
+}
+
+/*———————〈 B U T T O N S 〉———————*/
+
+.tools .button {
+ align-self: center;
+ width: 100px;
+ height: 40px;
+ border: 2px solid black;
+ cursor: pointer;
+ color: white;
+ background: #222;
+ font-weight: bold;
+ margin: 0 20px;
+}
+
+
+.color-picker {
+ align-self: center;
+ margin: 0 10px;
+ height: 50px;
+ border: 1px solid transparent;
+ background: transparent;
+}
+
+.pen-range {
+ width: 25%;
+ align-self: center;
+ margin: 0 10px;
+}
+
+/* —————————〈 E N D 〉——————————— */
+
+
+
+@media (max-width: 850px){
+ .page-wrapper{
+  display: inherit;
+ }
+ .tools{ width: 100%;}
+ .sidebar{ width: 100%;}
+ .main {width: 100%;}
+
+ h3 {;text-combine-upright: inherit;}
+
+ h1 {font-size: 2.5rem;}
+
+ #navigation {
+  width:90%;}
+}
+
+
+header {
+ width: 100%;
+ font-size: 3em;
+ border: 2px solid black;
+
+}
+
+body {
+ background: white;
+ margin: 0;
+ padding-bottom: 2em;
+ font-family: Arial, Helvetica, sans-serif;;
+ font-size: 1.2rem;
+ line-height: 1;
+}
+
+
+h1 {
+ margin: 1rem;
+ text-align: center;
+ font-size: 4rem;
+ color: #000000;
+}
+
+h2 {
+ margin: 0;
+ font-size: 2rem;
+ color: #4a0000;
+}
+h3 {
+ font-weight: bold;
+
+}
+
+#navigation{
+ width: 100%;
+ text-align: center;
+ border: 1px solid #000000;
+ margin: 1rem;
+ border-radius: 40px 0px 40px 0px;
+}
+
+#sidebar {
+ min-height: 50%;
+ background: #a42222;
+ max-width: 30%;
+ max-height: 100%;
+
+ margin-right: auto;
+ border: 1px solid black;
+}
+
+.right-float {
+ width: 69%;
+}
+.canvas-input {
+ max-width: 98%;
+}
+
+#info{
+ padding: 1em;
+ max-width: 95%;
+ border: 2px solid black;
+}
+
+
+.main {
+ max-width: 50%;
+ margin-left: auto;
+ border: 1px solid black;
+}
+.page-wrapper{
+ display: flex;
+ flex-wrap: wrap;
+ margin: 2rem;
+ border: 1px solid black;
+
+}
+
+
+#footer {
+ width: 100%;
+ height: 3em;
+ padding: 1em;
+ text-align: center;
+ border: 0.1em solid black;
+}
